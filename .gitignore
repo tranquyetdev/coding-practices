@@ -112,3 +112,4 @@ yarn-error.log
 
 
 services/cms-frontend-react-native-e2e/artifacts
+*.env
