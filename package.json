@@ -69,6 +69,7 @@
     "babel-jest": "28.1.1",
     "babel-loader": "8.1.0",
     "cypress": "^12.2.0",
+    "cz-conventional-changelog": "^3.3.0",
     "detox": "20.1.1",
     "eslint": "~8.15.0",
     "eslint-config-next": "13.1.1",
@@ -107,5 +108,10 @@
   "volta": {
     "node": "16.19.1",
     "yarn": "1.22.19"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
