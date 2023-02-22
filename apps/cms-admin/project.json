@@ -1,7 +1,7 @@
 {
   "name": "cms-admin",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "services/cms-admin/src",
+  "sourceRoot": "apps/cms-admin/src",
   "projectType": "application",
   "targets": {
     "build": {
@@ -9,7 +9,7 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "outputPath": "dist/services/cms-admin"
+        "outputPath": "dist/apps/cms-admin"
       },
       "configurations": {
         "development": {
@@ -54,17 +54,17 @@
     },
     "test": {
       "executor": "@nrwl/vite:test",
-      "outputs": ["coverage/services/cms-admin"],
+      "outputs": ["coverage/apps/cms-admin"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/services/cms-admin"
+        "reportsDirectory": "../../coverage/apps/cms-admin"
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["services/cms-admin/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/cms-admin/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

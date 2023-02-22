@@ -12,5 +12,5 @@ export default {
     '^.+\\.[tj]s$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../coverage/services/cms-graphql-api',
+  coverageDirectory: '../../coverage/apps/cms-graphql-api',
 };

@@ -58,8 +58,8 @@
     "sharedGlobals": ["{workspaceRoot}/babel.config.json"]
   },
   "workspaceLayout": {
-    "appsDir": "services",
-    "libsDir": "packages"
+    "appsDir": "apps",
+    "libsDir": "libs"
   },
   "cli": {
     "packageManager": "yarn"

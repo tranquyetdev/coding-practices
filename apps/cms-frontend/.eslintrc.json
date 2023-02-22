@@ -12,7 +12,7 @@
       "rules": {
         "@next/next/no-html-link-for-pages": [
           "error",
-          "services/cms-frontend/pages"
+          "apps/cms-frontend/pages"
         ]
       }
     },

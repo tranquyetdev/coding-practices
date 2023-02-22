@@ -111,5 +111,5 @@ yarn-error.log
 /coverage
 
 
-services/cms-frontend-react-native-e2e/artifacts
+apps/cms-frontend-react-native-e2e/artifacts
 *.env

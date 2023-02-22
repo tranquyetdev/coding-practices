@@ -1,7 +1,7 @@
 {
   "name": "cms-frontend-react-native",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "services/cms-frontend-react-native/src",
+  "sourceRoot": "apps/cms-frontend-react-native/src",
   "projectType": "application",
   "targets": {
     "start": {
@@ -25,7 +25,7 @@
       "options": {
         "entryFile": "src/main.tsx",
         "platform": "ios",
-        "bundleOutput": "dist/services/cms-frontend-react-native/ios/main.jsbundle"
+        "bundleOutput": "dist/apps/cms-frontend-react-native/ios/main.jsbundle"
       }
     },
     "run-android": {
@@ -45,7 +45,7 @@
       "options": {
         "entryFile": "src/main.tsx",
         "platform": "android",
-        "bundleOutput": "dist/services/cms-frontend-react-native/android/main.jsbundle"
+        "bundleOutput": "dist/apps/cms-frontend-react-native/android/main.jsbundle"
       }
     },
     "sync-deps": {
@@ -61,7 +61,7 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": [
-          "services/cms-frontend-react-native/**/*.{ts,tsx,js,jsx}"
+          "apps/cms-frontend-react-native/**/*.{ts,tsx,js,jsx}"
         ]
       }
     },
@@ -69,7 +69,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
       "options": {
-        "jestConfig": "services/cms-frontend-react-native/jest.config.ts",
+        "jestConfig": "apps/cms-frontend-react-native/jest.config.ts",
         "passWithNoTests": true
       },
       "configurations": {
