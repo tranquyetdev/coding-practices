@@ -13,11 +13,39 @@ Building a full example to solve a common business problem along with learning, 
 - **Security**: Learning and Building applications with security in mind.
 - **Monorepo**: Learning and practicing both software development, building the CI/CD pipeline, all in one with monorepo support.
 
-# Solution Design
+# Architecture Overview
+
+A draft architecture to represent components of the system, and what will be built. It could be changed during the learning process.
 
 ![High level architecture overview](solution.drawio.png 'High level architecture overview').
 
-# Implementation
+# Technology Stack
+
+| Components          | Prefer                              | Alternative                 |
+| ------------------- | ----------------------------------- | --------------------------- |
+| frontend-web        | remix                               | nextjs                      |
+| admin-web           | reactjs                             |                             |
+| frontend-mobile     | react-native                        | flutter                     |
+| GraphQL Gateway     | nestjs + apollo federation          | Apollo Managed Federation   |
+| user-service        | nestjs microservice + apollo server | AWS AppSync                 |
+| product-service     | nestjs microservice + apollo server | AWS AppSync                 |
+| customer-service    | nestjs microservice + apollo server | AWS AppSync                 |
+| order-service       | nestjs microservice + apollo server | AWS AppSync                 |
+| recognition-service | --                                  |                             |
+| message-queue       | redis (pub-sub)                     | RabbitMQ, Apache Kafka, SQS |
+| distributed-cache   | redis (cluster mode)                | AWS Elasticache             |
+| user-db             | TBD                                 |                             |
+| product-db          | TBD                                 |                             |
+| customer-db         | TBD                                 |                             |
+| order-db            | TBD                                 |                             |
+| logging             | TBD                                 |                             |
+| monitoring          | TBD                                 |                             |
+| security            | TBD                                 |                             |
+| CI/CD               | Github Actions                      | CircleCI, SemaphoreCI       |
+| IoC                 | Terraform                           |                             |
+| monorepo            | NX                                  | turborepo                   |
+
+# Implementation Detail
 
 TBD
 
